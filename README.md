@@ -42,17 +42,7 @@ cd hermes-webui
 python3 bootstrap.py
 ```
 
-### 三、配置本地模型 (Gemma 4)
-运行配置命令：
-```bash
-hermes setup
-```
-**关键配置项：**
-- **Model Provider**: 选择 `OpenAI Compatible`
-- **Base URL**: 填入 Ollama 地址 (例如 `http://192.168.1.228:11434/v1`)
-- **Model Name**: `gemma4`
 
-> ⚠️ **避坑指南**：如果提示上下文不足，请在配置中修改 `model.context_length: 8192`。
 
 ### 四、对接微信 (重点)
 1. 执行 `hermes setup`
